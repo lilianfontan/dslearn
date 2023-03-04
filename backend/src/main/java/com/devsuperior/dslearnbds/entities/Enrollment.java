@@ -30,6 +30,9 @@ public class Enrollment {
 	@ManyToMany(mappedBy = "enrollmentsDone")
 	private Set<Lesson> lessonsDone = new HashSet<>();
 	
+	@ManyToMany(mappedBy = "enrollment")
+	private Set<Deliver> deliveries = new HashSet<>();
+	
 	public Enrollment() {
 	}
 
